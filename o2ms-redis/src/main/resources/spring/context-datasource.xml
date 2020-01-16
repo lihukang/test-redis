@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.2.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="cubrid.jdbc.driver.CUBRIDDriver"/>
+        <property name="url" value="jdbc:cubrid:10.105.181.211:30102:o2ms:::?charset=utf-8"/>
+        <property name="username" value="o2ms"/>
+        <property name="password" value="o2ms"/>
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="50"/>
+        <property name="maxIdle" value="50"/>
+    </bean>
+</beans>
