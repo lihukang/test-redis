@@ -7,12 +7,12 @@
         <property name="configLocation" value="classpath:sqlmap/sql-mapper-config.xml" />
         <property name="mapperLocations" value="classpath*:sqlmap/**/*_SqlMap.xml" />
         <property name="typeAliasesPackage" value="
-             com.nhncorp.ooms.redis.deptIncome.model 
+             com.mi.ooms.redis.deptIncome.model 
              "/>
     </bean>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.nhncorp.**.dao" />
+        <property name="basePackage" value="com.mi.**.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSession"/>
     </bean>
 </beans>

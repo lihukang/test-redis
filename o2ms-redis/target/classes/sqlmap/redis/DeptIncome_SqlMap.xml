@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.nhncorp.ooms.redis.deptIncome.dao.DeptIncomeDao">
+<mapper namespace="com.mi.ooms.redis.deptIncome.dao.DeptIncomeDao">
 
-    <select id="selectOrgWrkAcmpActivityByOrderList" parameterType="map" resultType="com.nhncorp.ooms.redis.deptIncome.model.DeptIncomeModel">
+    <select id="selectOrgWrkAcmpActivityByOrderList" parameterType="map" resultType="com.mi.ooms.redis.deptIncome.model.DeptIncomeModel">
 		/*selectOrgWrkAcmpActivityByOrderList*/
 		SELECT /*+ USE_IDX */
 		TASK.ORDER_JOB_NO
@@ -97,7 +97,7 @@
 
 	</select>
 	
-	<select id="selectOrgWrkAcmpSubTaskByOrderList" parameterType="map" resultType="com.nhncorp.ooms.redis.deptIncome.model.DeptIncomeModel">
+	<select id="selectOrgWrkAcmpSubTaskByOrderList" parameterType="map" resultType="com.mi.ooms.redis.deptIncome.model.DeptIncomeModel">
 		/*selectOrgWrkAcmpSubTaskByOrderList*/
 		SELECT /*+ USE_IDX */
 		TASK.ORDER_JOB_NO
@@ -199,7 +199,7 @@
 	</select>
 	
 	
-	<select id="selectOrgWrkAcmpTaskByOrderList" parameterType="map" resultType="com.nhncorp.ooms.redis.deptIncome.model.DeptIncomeModel">
+	<select id="selectOrgWrkAcmpTaskByOrderList" parameterType="map" resultType="com.mi.ooms.redis.deptIncome.model.DeptIncomeModel">
 		/*selectOrgWrkAcmpTaskByOrderList*/
 		SELECT /*+ USE_IDX */
 		A.ORDER_JOB_NO
@@ -311,7 +311,7 @@
 
 	</select>
 	
-	<select id="selectOrgWrkAcmpJobByOrderList" parameterType="map" resultType="com.nhncorp.ooms.redis.deptIncome.model.DeptIncomeModel">
+	<select id="selectOrgWrkAcmpJobByOrderList" parameterType="map" resultType="com.mi.ooms.redis.deptIncome.model.DeptIncomeModel">
 		/*selectOrgWrkAcmpJobByOrderList*/
 		SELECT /*+ USE_IDX */
 		JOB.ORDER_JOB_NO
@@ -431,7 +431,7 @@
 		JOB.ORDER_JOB_NM
 	</select>
 	
-	<select id="selectNewDdbyData" resultType="com.nhncorp.ooms.redis.deptIncome.model.DeptIncomeModel">
+	<select id="selectNewDdbyData" resultType="com.mi.ooms.redis.deptIncome.model.DeptIncomeModel">
 			SELECT ACMP_YMD YMD
 			,USER_ORG_ID
 		FROM O2_DDBY_ACMP

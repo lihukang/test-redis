@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.nhncorp.ooms.redis.calendar.dao.CalendarDao">
+<mapper namespace="com.mi.ooms.redis.calendar.dao.CalendarDao">
 
     <select id="selectCalendar" parameterType="map" resultType="String">
 		SELECT YYYYMMDD FROM O2_CAL
